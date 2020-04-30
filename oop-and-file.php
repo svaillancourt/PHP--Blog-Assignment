@@ -22,8 +22,8 @@ include './includes/Snacks.Class.php';
   // Output ALL the snacks we found!
   $snacks->output();
   ?>
-  <h2>Find Snack by Index Number</h2>
-  <p>The third snack is:</p>
+  <h2>Find Blog Article by Index Number</h2>
+  <p>The third article is:</p>
   <?php
   // Output just the third snack (remember, arrays start at index: 0.)
   $snacks->findSnackByIndex(2);

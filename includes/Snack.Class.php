@@ -29,11 +29,11 @@ class Snack
     ob_start(); // Begins an output buffer.
 ?>
     <dl>
-      <dt>Name</dt>
+      <dt>ID</dt>
       <dd><?php echo $this->name; ?></dd>
-      <dt>Price</dt>
+      <dt>Title</dt>
       <dd><?php echo $this->price; ?></dd>
-      <dt>Type</dt>
+      <dt>Content</dt>
       <dd><?php echo $this->type; ?></dd>
     </dl>
 <?php // ob_get_clean() clears the output buffer, and returns what the string was.
