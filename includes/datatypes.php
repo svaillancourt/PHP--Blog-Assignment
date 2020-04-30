@@ -1,6 +1,6 @@
 <?php
 // Basic assignment.
-$myMessage = 'My First PHP!';
+$myMessage = 'Welcome to my PHP Blog Assignment!';
 # This is also a comment!
 /*
   Multi-line
