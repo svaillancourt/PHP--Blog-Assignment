@@ -36,7 +36,7 @@ class Snacks
       echo '<h2>Local Blog Articles</h2><ul>';
       // Loop through the snacks!
       foreach ($this->allSnacks as $snack) { // Create an instance of our OTHER class: Snack! Pass in the values.
-        $newSnack = new Snack($snack->name, $snack->price, $snack->type);
+        $newSnack = new Snack($snack->id, $snack->title, $snack->content);
         // Echo out our result.
         echo '<li>' . $newSnack->output(FALSE) . '</li>';
       } // Close the unordered list.
@@ -50,9 +50,9 @@ class Snacks
     if (is_integer($id)) { // Check if the snack at this INDEX even EXISTS!?
       if (isset($this->allSnacks[$id])) { // Retrieve that snack from the array!
         $foundSnack = new Snack(
-          $this->allSnacks[$id]->name,
-          $this->allSnacks[$id]->price,
-          $this->allSnacks[$id]->type
+          $this->allSnacks[$id]->id,
+          $this->allSnacks[$id]->title,
+          $this->allSnacks[$id]->content
         );
         // Output that snack!
         $foundSnack->output();

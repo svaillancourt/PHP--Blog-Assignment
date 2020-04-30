@@ -5,15 +5,18 @@ class Snack
   /**
    * Properties (with default values.)
    */
+  
   // PUBLIC means it can be overwritten OUTSIDE of what's in the class methods.
   public $id  = '';
   public $title = '';
   public $content  = '';
+  
   /**
    * Methods.
    */
-  // __construct executes each time we make a new instance of this class (a new object.)
-  function __construct($id = 0, $title = 'No id', $content = 'content')
+  
+   // __construct executes each time we make a new instance of this class (a new object.)
+  function __construct($id = 0, $title = 'suject', $content = 'content')
   {
     if (is_integer($id) && !empty($id))
       $this->id = $id;
