@@ -7,17 +7,17 @@ class Snack
    */
   // PUBLIC means it can be overwritten OUTSIDE of what's in the class methods.
   public $name  = '';
-  public $price = 0.00;
+  public $price = '';
   public $type  = '';
   /**
    * Methods.
    */
   // __construct executes each time we make a new instance of this class (a new object.)
-  function __construct($name = 'No Name', $price = 0.00, $type = 'Uncategorized')
+  function __construct($name = 0, $price = 'No Name', $type = 'content')
   {
-    if (is_string($name) && !empty($name))
+    if (is_integer($name) && !empty($name))
       $this->name = $name;
-    if (is_float($price) && !empty($price))
+    if (is_string($price) && !empty($price))
       $this->price = $price;
     if (is_string($type) && !empty($type))
       $this->type = $type;
@@ -29,12 +29,9 @@ class Snack
     ob_start(); // Begins an output buffer.
 ?>
     <dl>
-      <dt>ID</dt>
-      <dd><?php echo $this->name; ?></dd>
-      <dt>Title</dt>
-      <dd><?php echo $this->price; ?></dd>
-      <dt>Content</dt>
-      <dd><?php echo $this->type; ?></dd>
+      <dt>ID: <?php echo $this->name; ?></dt>
+      <dt>Article Topic: <?php echo $this->price; ?></dt>
+      <dt>Content: <?php echo $this->type; ?></dt>
     </dl>
 <?php // ob_get_clean() clears the output buffer, and returns what the string was.
     $output = ob_get_clean(); // We now have the buffered (echo'd) string contents saved in a variable.
