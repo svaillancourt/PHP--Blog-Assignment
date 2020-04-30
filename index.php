@@ -19,7 +19,7 @@ include './includes/datatypes.php';
   <pre>
     <?php
     // Var dump is great for seeing what's inside!
-    var_dump($myOtherArray);
+    // var_dump($myOtherArray);
     ?>
   </pre>
   <h2>Concatenated String</h2>

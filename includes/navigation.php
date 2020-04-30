@@ -1,7 +1,7 @@
 <nav>
   <h2>Website Navigation</h2>
   <ul>
-    <li>
+    <!-- <li>
       <a href="./index.php">Home</a>
     </li>
     <li>
@@ -12,9 +12,9 @@
     </li>
     <li>
       <a href="./oop.php">OOP</a>
-    </li>
+    </li> -->
     <li>
-      <a href="./oop-and-file.php">OOP and File Retrieval / Reading</a>
+      <a href="./oop-and-file.php">Blog - Assignments</a>
     </li>
   </ul>
 </nav>
