@@ -26,7 +26,7 @@ $myNull = NULL;
 // Object.
 $myObject = new stdClass();
 // Array.
-$myArray = [ 'First Item', 2, 'third item' ];
+$myArray = ['First Item', 2, 'third item'];
 $myOtherArray = array(
   $myString,
   $myInteger,
