@@ -1,5 +1,5 @@
 <nav>
-  <h2>Website Navigation</h2>
+  <h2>Navigation</h2>
   <ul>
     <!-- <li>
       <a href="./index.php">Home</a>

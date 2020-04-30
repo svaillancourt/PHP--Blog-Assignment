@@ -14,7 +14,7 @@ include './includes/Snacks.Class.php';
 </head>
 
 <body>
-  <h1>OOP and File</h1>
+  <h1>PHP - Assignment 3</h1>
   <?php include './includes/navigation.php'; ?>
   <?php
   // New object instance of "Snacks" class.
