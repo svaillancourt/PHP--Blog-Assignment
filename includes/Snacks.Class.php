@@ -33,7 +33,7 @@ class Snacks
   public function output()
   { // If there ARE snacks.
     if (is_array($this->allSnacks) && !empty($this->allSnacks)) { // Heading, and open our unordered list.
-      echo '<h2>Snacks List</h2><ul>';
+      echo '<h2>Local Blog Articles</h2><ul>';
       // Loop through the snacks!
       foreach ($this->allSnacks as $snack) { // Create an instance of our OTHER class: Snack! Pass in the values.
         $newSnack = new Snack($snack->name, $snack->price, $snack->type);
